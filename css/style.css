@@ -1,6 +1,5 @@
 body {
-  
-    background-image: url('../images/fon.png');
+    background-image: url('../images/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +12,7 @@ body {
 
 header {
     background-color: rgba(15, 18, 26, 0.95);
-    border-bottom: 2px solid #f39c12; 
+    border-bottom: 2px solid #f39c12;
     text-align: center;
     padding: 25px 20px;
 }
@@ -39,9 +38,7 @@ table {
     background-color: rgba(19, 24, 34, 0.6);
 }
 
-
 .card {
-  
     background-color: rgba(19, 24, 34, 0.92);
     border: 1px solid #2d3748;
     border-radius: 6px;
@@ -91,6 +88,18 @@ table {
     padding: 12px;
 }
 
+#data-table th {
+    background-color: #f39c12;
+    color: #121417;
+    padding: 10px;
+    text-align: left;
+}
+
+#server-form {
+    background-color: transparent;
+    padding: 10px 0;
+}
+
 #navbar a {
     color: #ffffff;
     text-decoration: none;
@@ -129,21 +138,37 @@ table td {
     outline: none;
     border-color: #f39c12;
 }
-
-
-#download-link {
-    color: #e2e8f0;         
-    text-decoration: underline;
-    transition: color 0.2s ease;
+#server-form input[type="radio"] {
+    width: auto;
+    display: inline-block;
+    margin: 0 10px 15px 0;
 }
 
-#download-link:hover {
-    color: #f39c12;           
+#server-form p {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
-#data-table th {
-    background-color: #283344; 
-    color: #ffffff;           
+
+.plugin-list {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.plugin-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: rgba(30, 30, 46, 0.6);
     padding: 10px;
-    text-align: left;
-    border-bottom: 2px solid #4a5568;
+    border-radius: 8px;
+    border: 1px solid #2d3748;
+}
+
+.plugin-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 8px; 
+    object-fit: cover;
 }
