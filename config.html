@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Configuration - Minecraft Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minecraft Server Guide</h1>
+        <p>Server Optimization and Settings</p>
+    </header>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="config.html">Config</a>
+        <a href="plugins.html">Plugins</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>server.properties Settings</h2>
+            <p>This table shows key parameters to optimize your server on a local computer:</p>
+
+            <table id="data-table">
+                <tr>
+                    <th>Parameter</th>
+                    <th>Default Value</th>
+                    <th>Recommended Value</th>
+                </tr>
+                <tr>
+                    <td>max-tick-time</td>
+                    <td>60000</td>
+                    <td>-1 (Disables watchdog, prevents server crashes)</td>
+                </tr>
+                <tr>
+                    <td>view-distance</td>
+                    <td>10</td>
+                    <td>6-8 (Reduces CPU and RAM load)</td>
+                </tr>
+                <tr>
+                    <td>online-mode</td>
+                    <td>true</td>
+                    <td>false (Allows non-premium accounts)</td>
+                </tr>
+                <tr>
+                    <td>max-players</td>
+                    <td>20</td>
+                    <td>5-10 (Best for home hosting)</td>
+                </tr>
+                <tr>
+                    <td>server-port</td>
+                    <td>25565</td>
+                    <td>25565 (Default port for Minecraft)</td>
+                </tr>
+                <tr>
+                    <td>difficulty</td>
+                    <td>easy</td>
+                    <td>normal / hard (World challenge level)</td>
+                </tr>
+                <tr>
+                    <td>gamemode</td>
+                    <td>survival</td>
+                    <td>survival (Standard gameplay mode)</td>
+                </tr>
+            </table>
+            <div class="card">
+                <h2>Network & Connection Info</h2>
+                <p>To let other players join your local server:</p>
+                <ul>
+                    <li><strong>Host Player:</strong> Connect using <code>localhost</code> or <code>127.0.0.1</code></li>
+                    <li><strong>Local Network:</strong> Friends in the same Wi-Fi connect using your IPv4 address</li>
+                    <li><strong>Remote Friends:</strong> Use port forwarding on your router or tools like Radmin VPN / Playit.gg</li>
+                </ul>
+            </div>  
+
+            <img class="site-img" src="images/server-dir.png" alt="Server folder structure showing configuration files">
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by: Ramazan Zhunusov, Islam Baimagambet | Group: SE-2515</p>
+    </footer>
+
+</body>
+</html>

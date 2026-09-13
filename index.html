@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Setup - Minecraft Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minecraft Server Guide</h1>
+        <p>Server Core Installation</p>
+    </header>
+
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="config.html">Config</a>
+        <a href="plugins.html">Plugins</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>How to Install PaperMC Server</h2>
+            <p>Follow these steps to run a Minecraft server on your local PC:</p>
+            
+            <ol>
+                <li>Download and install <strong>Java 21</strong> on your computer</li>
+                <li><a id="download-link" href="https://papermc.io/downloads/paper" target="_blank">Download paper from the official website</a></li>
+                <li>Create a new folder and place the <code>paper.jar</code> file inside it.</li>
+                <li>Create a text file named <code>run.bat</code> and add this command: <code>java -jar paper.jar</code></li>
+                <li>Run <code>run.bat</code> once, open <code>eula.txt</code>, and change it to <code>eula=true</code></li>
+                <li>Run <code>run.bat</code> again and wait until the world generation is finished</li>
+            </ol>
+            <h4>Run Script Example (run.bat)</h4>
+            <p>Create a batch file with the following startup flags:</p>
+            <pre style="background: #111116; padding: 12px; border-radius: 4px; border: 1px solid #2d3748; color: #f39c12;">
+            <code>java -Xms2G -Xmx4G -jar paper.jar nogui
+            pause</code></pre>
+
+            <img class="site-img" src="images/console.png" alt="Minecraft server console running successfully">
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by: Ramazan Zhunusov, Islam Baimagambet | Group: SE-2515</p>
+    </footer>
+
+</body>
+</html>
