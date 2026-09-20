@@ -3,70 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plugins & Help - Minecraft Guide</title>
+    <title>Plugins - Minecraft Guide</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <header>
-        <h1>Minecraft Server Guide</h1>
-        <p>Plugins and Help Desk</p>
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <img src="images/logo2.png" alt="HostNode Logo" style="width: 150px; height: 28px; vertical-align: middle; margin-right: 8px;">
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="config.html">Config</a>
+            <a href="plugins.html">Plugins</a>
+            <a href="about.html">About Us</a>
+        </nav>
     </header>
-
-    <nav id="navbar">
-        <a href="index.html">Home</a>
-        <a href="config.html">Config</a>
-        <a href="plugins.html">Plugins</a>
-        <a href="about.html">About Us</a>
-    </nav>
 
     <main>
         <div class="card">
             <h2>Essential Server Plugins</h2>
-            <ul class="plugin-list">
-    <li>
-        <img class="plugin-icon" src="images/essentials.png" alt="EssentialsX icon">
-        <span><strong>EssentialsX:</strong> Adds basic commands like /spawn, /sethome, and /tp.</span>
-    </li>
-    <li>
-        <img class="plugin-icon" src="images/luckperms.png" alt="LuckPerms icon">
-        <span><strong>LuckPerms:</strong> Manages player permissions and admin groups.</span>
-    </li>
-    <li>
-        <img class="plugin-icon" src="images/worldedit.png" alt="WorldEdit icon">
-        <span><strong>WorldEdit:</strong> Allows fast building and terrain changes.</span>
-    </li>
-</ul>
+            <p>High-performance plugins required for administration, management, and world building:</p>
+            <div class="card-row">
+                <div class="flex-card">
+                    <img class="card-img" src="images/essentials.png" alt="EssentialsX icon">
+                    <h3>EssentialsX</h3>
+                    <p>Provides over 100 core management commands including /spawn, /warp, /sethome, kits, and economy systems.</p>
+                    <a href="https://essentialsx.net/" target="_blank" class="card-btn">Download</a>
+                </div>
 
+                <div class="flex-card">
+                    <img class="card-img" src="images/luckperms.png" alt="LuckPerms icon">
+                    <h3>LuckPerms</h3>
+                    <p>Advanced permission manager with an interactive web editor, inheritance groups, and fast database support.</p>
+                    <a href="https://luckperms.net/" target="_blank" class="card-btn">Download</a>
+                </div>
+
+                <div class="flex-card">
+                    <img class="card-img" src="images/worldedit.png" alt="WorldEdit icon">
+                    <h3>WorldEdit</h3>
+                    <p>In-game Minecraft world editor to construct structures, generate shapes, and manage terrain quickly using brushes.</p>
+                    <a href="https://enginehub.org/worldedit/" target="_blank" class="card-btn">Download</a>
+                </div>
+            </div>
         </div>
 
         <div class="card">
-            <h2>Technical Support Form</h2>
-            <form id="server-form" action="#" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@astanait.edu.kz" required>
-
-                <label for="core">Select Server Core:</label>
-                <select id="core" name="core">
-                    <option value="paper">PaperMC</option>
-                    <option value="spigot">Spigot</option>
-                    <option value="purpur">Purpur</option>
-                </select>
-
-                <p>Connection Mode:</p>
-                <input type="radio" id="local" name="network" value="local" checked>
-                <label for="local">Localhost only</label><br>
-                <input type="radio" id="public" name="network" value="public">
-                <label for="public">Port Forwarding / VPN</label><br><br>
-
-                <label for="msg">Error Log or Question:</label>
-                <textarea id="msg" name="message" rows="4" placeholder="Paste your error message here..." required></textarea>
-
-                <button type="submit" class="submit-btn">Submit Request</button>
-            </form>
+            <h2>Server World Showcase</h2>
+            <p>Hover over the screenshots to preview custom maps, hubs and gameplay zones:</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery-1.jpg" alt="Gladiator PvP Arena">
+                    <div class="gallery-overlay">Gladiator PvP Arena</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-2.jpg" alt="Nether Hub">
+                    <div class="gallery-overlay">Nether Hub</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-3.jpg" alt="The End">
+                    <div class="gallery-overlay">The End</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-4.jpg" alt="Main Spawn & Hub">
+                    <div class="gallery-overlay">Main Spawn & Hub</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-5.jpg" alt="Player Trade Market">
+                    <div class="gallery-overlay">Player Trade Market</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-6.jpg" alt="Mining Quarry Area">
+                    <div class="gallery-overlay">Mining Quarry Area</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-7.jpg" alt="Custom Mob Dungeon">
+                    <div class="gallery-overlay">Custom Mob Dungeon</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-8.png" alt="Interdimensional Portal">
+                    <div class="gallery-overlay">Interdimensional Portal</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-9.jpg" alt="Player SMP District">
+                    <div class="gallery-overlay">Player SMP District</div>
+                </div>
+            </div>
         </div>
     </main>
 
